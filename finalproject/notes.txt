@@ -1,0 +1,15 @@
+For infection have it look at the people next to it by, say, 6 people (3 in front and 3 in back) (use modulus function to do that)
+	- modify .infect() function to implement these changes
+
+Once this is done, just amp up the size of the Populations by a ton
+Nested loops should be able to create the Populations as we go
+	- update the created Population to reflect the parameters
+Obtaining some data
+	- loop the Population with the same parameters several times 
+	- report the average number of days it took to end
+	- report the standard deviation times the Student's T z value for 95% confidence
+Data analysis
+	- use the data given to create some curve to show things about herd immunity with respect to percent innoculated population
+		- could also 'zoom in' on some subset of the innoculated population and look at that with respect to additional factors like infectiousness of the disease etc.
+	- use one of the linear interpolation functions to make some function when plotting innoculation rate and number of days until end
+	- could do this process to create a function of 2 variables, such as innoculation rate and infectiousness with respect to number of days until end to create a mesh for this stuff
