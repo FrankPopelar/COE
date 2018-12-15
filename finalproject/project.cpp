@@ -154,7 +154,7 @@ int main()
 		{
 			for(int k = 0; k < 95; k++)
 			{
-				for(int l = 9; l < 30; l++)
+				for(int l = 0; l < 30; l++)
 					results[i][j][k][l] = 0;
 			}
 		}
