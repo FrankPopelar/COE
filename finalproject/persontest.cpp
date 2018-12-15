@@ -161,7 +161,7 @@ int main()
 	}
 
 	//SICK TIME
-	for(int i = 1; i < 101; i++)			// loops through the transmission rates
+	for(int i = 1; i < 100; i++)			// loops through the transmission rates
 	{
 		for(int j = 1; j < 96; j++)		// loops through the innoculation percentages
 		{
