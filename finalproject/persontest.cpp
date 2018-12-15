@@ -150,7 +150,7 @@ int main()
 	srand(time(0));			// sets the seed for the random vector to make sure that the program doesn't output the same results at each run
 	for(int i = 0; i < 2; i++)	// set all values in array to be zero
 	{
-		for(int j = 0; j < 99; j++)
+		for(int j = 0; j < 100; j++)
 		{
 			for(int k = 0; k < 95; k++)
 			{
@@ -165,6 +165,7 @@ int main()
 	{
 		for(int j = 1; j < 96; j++)		// loops through the innoculation percentages
 		{
+			cout << "Iteration " << i << ", " << j << endl;
 			for(int k = 0; k < 30; k++)	// loops through the subtrials
 			{
 				first = true;
@@ -181,6 +182,7 @@ int main()
 		}
 	}
 	
+	cout << "Printing to file" << endl;
 	//PRINTING TO FILE
 	ofstream f;			// output file stream for the days file
 	f.open("days.txt");		// open file days [output file stream, so write to file already enabled]
@@ -190,7 +192,6 @@ int main()
 	g << "Transmission rate explicitly defined as it changes, innoculation rate varies from 1 to 95 in the list, but are not explicitly stated for ease of copying and pasting\n";
 	for(int i = 0; i < 100; i++)
 	{
-		f << "Transmission rate: " << i << "\n";
 		for(int j = 0; j < 95; j++)
 		{
 			boo = 0;
